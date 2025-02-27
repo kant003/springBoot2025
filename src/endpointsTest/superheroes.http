@@ -1,0 +1,29 @@
+### Endpoint de saludo
+GET http://localhost:8080/api/superheroes/saludar
+
+### Obtener todos los superheroes
+GET http://localhost:8080/api/superheroes
+
+
+### Obtener todos los superheroes
+GET http://localhost:8080/api/superheroes/15
+
+### Añadir nuevo superhero Batman
+POST http://localhost:8080/api/superheroes
+Content-Type: application/json
+
+{
+    "nombre": "Batman",
+    "superPoderes": ["dinero"],
+    "fotoUrl": "https://resizer.glanacion.com/resizer/v2/asi-se-veria-batman-en-la-vida-UFQXOQOUSRFRLM2IQ2CJD2UASU.jpg?auth=33d5e29a13d51997b78386a456fda0f43e841d2b9a0c655e0799f9ec435de390&width=420&height=420&quality=70&smart=true"
+}
+
+### Añadir nuevo superhero Superman
+POST http://localhost:8080/api/superheroes
+Content-Type: application/json
+
+{
+    "nombre": "Superman",
+    "superPoderes": ["volar", "superfuerza", "ojos laser"],
+    "fotoUrl": "https://resizer.glanacion.com/resizer/v2/superman-pertenece-al-grupo-de-comics-IWOPYB3ZTZBWVEJ2AFTPW2E3BI.png?auth=980eb02e48ad71d7f1151e4cd12a2b9a4830bebc729a8ba4bddc198a9bc7335a&width=420&height=280&quality=70&smart=true"
+}
