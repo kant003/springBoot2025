@@ -29,4 +29,18 @@ public class SuperheroeService {
     public Optional<Superheroe> getById(Long id){
         return repository.findById(id);
     }
+
+    public void delete(Long id){
+        repository.deleteById(id);
+    }
+
+    public List<Superheroe> findByName(String name){
+        return repository.findByNombreContainingIgnoreCase(name);
+    }
+
+ /*    public Optional<Superheroe> update(Long id, Superheroe superheroe){
+        Optional<Superheroe> data = repository.findById(id);
+        data.get()
+    } */
+
 }

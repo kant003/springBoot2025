@@ -27,3 +27,20 @@ Content-Type: application/json
     "superPoderes": ["volar", "superfuerza", "ojos laser"],
     "fotoUrl": "https://resizer.glanacion.com/resizer/v2/superman-pertenece-al-grupo-de-comics-IWOPYB3ZTZBWVEJ2AFTPW2E3BI.png?auth=980eb02e48ad71d7f1151e4cd12a2b9a4830bebc729a8ba4bddc198a9bc7335a&width=420&height=280&quality=70&smart=true"
 }
+
+### Borrar un superheroe
+DELETE http://localhost:8080/api/superheroes/1
+
+### Borrar un superheroe
+PUT http://localhost:8080/api/superheroes/2
+Content-Type: application/json
+
+{
+    "nombre": "NewSupergirl",
+    "superPoderes": ["volar", "superfuerza", "ojos laser"],
+    "fotoUrl": "https://resizer.glanacion.com/resizer/v2/superman-pertenece-al-grupo-de-comics-IWOPYB3ZTZBWVEJ2AFTPW2E3BI.png?auth=980eb02e48ad71d7f1151e4cd12a2b9a4830bebc729a8ba4bddc198a9bc7335a&width=420&height=280&quality=70&smart=true"
+
+}
+
+### Buscar por nombre
+GET http://localhost:8080/api/superheroes/find?nombre=man
